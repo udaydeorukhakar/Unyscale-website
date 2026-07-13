@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unyscale — Making Your Operations Intelligent</title>
+<title>Unyscale - Making Your Operations Intelligent</title>
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
@@ -113,7 +113,7 @@
 
   /* WHAT WE DO */
   #what{background:var(--bg)}
-  .what-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+  .what-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
   .what-card{background:var(--white);border:1px solid var(--border);border-radius:14px;
     padding:1.75rem 1.5rem;transition:box-shadow .2s,transform .2s;position:relative;overflow:hidden}
   .what-card:hover{box-shadow:0 8px 32px rgba(27,42,74,.1);transform:translateY(-3px)}
@@ -121,25 +121,26 @@
   .what-card.c1::before{background:var(--blue)}
   .what-card.c2::before{background:linear-gradient(90deg,var(--blue),var(--cyan))}
   .what-card.c3::before{background:var(--amber)}
-  .what-card.c4::before{background:var(--green)}
   .card-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;
     justify-content:center;font-size:1.3rem;margin-bottom:1rem}
   .card-icon.i1{background:rgba(45,125,210,.1)}
   .card-icon.i2{background:rgba(0,194,203,.1)}
   .card-icon.i3{background:rgba(217,119,6,.1)}
-  .card-icon.i4{background:rgba(92,200,77,.1)}
   .card-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;
     color:var(--navy);margin-bottom:.25rem}
   .product-badge{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.06em;
     text-transform:uppercase;padding:2px 8px;border-radius:100px;margin-bottom:.6rem}
   .pb-iq{background:rgba(0,194,203,.12);color:var(--cyan2)}
   .pb-smart{background:rgba(217,119,6,.1);color:var(--amber2)}
-  .pb-saathi{background:rgba(92,200,77,.12);color:var(--green2)}
   .pb-consult{background:rgba(45,125,210,.1);color:var(--blue2)}
   .card-body{font-size:.85rem;color:var(--mtext);line-height:1.65;margin-bottom:1rem}
   .card-features{list-style:none;display:flex;flex-direction:column;gap:.35rem}
   .card-features li{font-size:.78rem;color:var(--mtext);padding-left:1rem;position:relative}
   .card-features li::before{content:'→';position:absolute;left:0;color:var(--teal);font-size:.72rem}
+  .card-pillar{margin-top:.9rem}
+  .card-pillar:first-of-type{margin-top:0}
+  .card-pillar-label{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--cyan2);margin-bottom:.4rem}
 
 
 
@@ -259,7 +260,7 @@
 
   @media(max-width:900px){
     .hero-inner,.tally-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
-    .hero-terminal,.what-grid{display:none}
+    .hero-terminal{display:none}
     .leadership-grid{grid-template-columns:1fr 1fr}
     .advisor-grid{grid-template-columns:1fr}
     .industries{grid-template-columns:repeat(2,1fr)}
@@ -411,7 +412,7 @@
             <span style="color:var(--green);flex-shrink:0;margin-top:2px">✓</span>Live dashboard, status checks from phone, any time
           </div>
           <div style="display:flex;gap:.75rem;align-items:flex-start;font-size:.88rem;color:var(--mtext)">
-            <span style="color:var(--green);flex-shrink:0;margin-top:2px">✓</span>iKnow guides new worker through SOPs in native languages - Hindi, Marathi, Telugu or English
+            <span style="color:var(--green);flex-shrink:0;margin-top:2px">✓</span>Enable workers to access SOPs, work instructions, resolve shop-floor queries and accelerate onboarding through an AI Assistant in their native language.
           </div>
         </div>
       </div>
@@ -423,9 +424,9 @@
 <section id="what">
   <div class="section-inner">
     <p class="section-eyebrow">Our Products</p>
-    <h2 class="section-title">Four capabilities,<br>one connected SaaS platform</h2>
+    <h2 class="section-title">One platform, three ways<br>to make your business smarter</h2>
     <p class="section-sub">
-      Delivered as a subscription SaaS platform, no heavy on-prem install, continuous updates, and pricing that scales with you. Start with the capability that solves your biggest pain today. Add more as you grow. Every product works standalone and works better together.
+      Delivered as a subscription SaaS platform, no heavy on-prem install, continuous updates, and pricing that scales with you. Start where your biggest pain is today. Add more as you grow.
     </p>
 
     <div class="what-grid">
@@ -451,18 +452,31 @@
       <div class="what-card c2">
         <div class="card-icon i2">⚡</div>
         <div class="product-badge pb-iq">Unyscale IQ</div>
-        <h3 class="card-title">Intelligent Planning & Operations Platform</h3>
+        <h3 class="card-title">Intelligent Planning, Operations & Knowledge Platform</h3>
         <p class="card-body">
-          Connect your existing systems or let us set one up. Unyscale IQ plans your resources and production first, then keeps execution on track with AI capture, live dashboards, and proactive alerts. Plan with confidence, execute without surprises.
+          Connect your existing systems or let us set one up. Unyscale IQ plans your resources and production, keeps execution on track with AI capture and live alerts, and keeps your workforce trained and self-sufficient - so the business runs on systems and knowledge, not on any one person.
         </p>
-        <ul class="card-features">
-          <li>Connects with Tally, Zoho, SAP & more</li>
-          <li>Rolling resource & production planning across weeks and months</li>
-          <li>AI capture invoices, orders, GRNs automatically</li>
-          <li>Auto-generate Bill of Materials (BOM) & costing from order</li>
-          <li>Live order, production & service tracking</li>
-          <li>Deadline & cost risk alerts before problems hit</li>
-        </ul>
+        <div class="card-pillar">
+          <div class="card-pillar-label">Plan</div>
+          <ul class="card-features">
+            <li>Rolling resource & production planning across weeks and months</li>
+            <li>Connects with Tally, Zoho, SAP & more</li>
+          </ul>
+        </div>
+        <div class="card-pillar">
+          <div class="card-pillar-label">Execute</div>
+          <ul class="card-features">
+            <li>AI capture invoices, orders & GRNs; auto-generate BOM and costing</li>
+            <li>Live tracking with deadline & cost-risk alerts before problems hit</li>
+          </ul>
+        </div>
+        <div class="card-pillar">
+          <div class="card-pillar-label">Know</div>
+          <ul class="card-features">
+            <li>SOPs, training & compliance guidance in native languages - voice or chat, any phone</li>
+            <li>Cuts key-person dependency - new workers onboarded and productive in days</li>
+          </ul>
+        </div>
       </div>
 
       <!-- SMART COST ENGINE -->
@@ -480,24 +494,6 @@
           <li>Risk-range outputs - best, likely, worst case</li>
           <li>Natural-language query in plain English</li>
           <li>Works with any data source</li>
-        </ul>
-      </div>
-
-      <!-- UNYSCALE iKNOW -->
-      <div class="what-card c4">
-        <div class="card-icon i4">📚</div>
-        <div class="product-badge pb-saathi">Unyscale iKnow</div>
-        <h3 class="card-title">Knowledge & Workforce Platform</h3>
-        <p class="card-body">
-          iKnow is your organisation's living knowledge base and workforce companion. Store SOPs, training documents, quality matrices, and compliance checklists - then let your team access, learn, and get guided through them via voice or chat, in any language.
-        </p>
-        <ul class="card-features">
-          <li>Document & SOP management - structured, version-controlled</li>
-          <li>Quality matrices, training content, compliance checklists</li>
-          <li>AI assistant answers questions from your own documents</li>
-          <li>Voice & chat - native languages on any phone</li>
-          <li>New worker onboarding in days, not weeks</li>
-          <li>Reduces key-person dependency, knowledge stays with the org</li>
         </ul>
       </div>
     </div>
